@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { isThaiChar } = require('./thai-character-checker');
+const { isThaiCharacter } = require('./thai-character-checker');
 
 function toggleStringInput(input) {
     const arrayInput = input.split('');
@@ -16,8 +16,8 @@ function toggleStringInput(input) {
             const previousCharacter = index > 0 ? arrayInput[index - 1] : '';
             const nextCharacter = index < arrayInput.length - 1 ? arrayInput[index + 1] : '';
             
-            const prevIsThai = isThaiChar(previousCharacter) || (dictionary[previousCharacter] && isThaiChar(dictionary[previousCharacter]));
-            const nextIsThai = isThaiChar(nextCharacter) || (dictionary[nextCharacter] && isThaiChar(dictionary[nextCharacter]));
+            const prevIsThai = isThaiCharacter(previousCharacter) || (dictionary[previousCharacter] && isThaiCharacter(dictionary[previousCharacter]));
+            const nextIsThai = isThaiCharacter(nextCharacter) || (dictionary[nextCharacter] && isThaiCharacter(dictionary[nextCharacter]));
             
             if (prevIsThai || nextIsThai) {
                 return duplicateMappings[character].thai;

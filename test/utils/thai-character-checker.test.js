@@ -1,11 +1,11 @@
-const { isThaiChar } = require('../../utils/thai-character-checker');
+const { isThaiCharacter } = require('../../utils/thai-character-checker');
 
-describe('isThaiChar', () => {
+describe('isThaiCharacter', () => {
     test('givenEnglishCharacter_WhenCallingIsThaiChar_ThenReturnFalse', () => {
         const input = 'a'
         const expectedOutput = false
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -14,7 +14,7 @@ describe('isThaiChar', () => {
         const input = '5'
         const expectedOutput = false
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -23,7 +23,7 @@ describe('isThaiChar', () => {
         const input = '@'
         const expectedOutput = false
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -32,7 +32,7 @@ describe('isThaiChar', () => {
         const input = 'ก'
         const expectedOutput = true
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -41,7 +41,7 @@ describe('isThaiChar', () => {
         const input = 'ะ'
         const expectedOutput = true
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -50,7 +50,7 @@ describe('isThaiChar', () => {
         const input = '่'
         const expectedOutput = true
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -59,7 +59,7 @@ describe('isThaiChar', () => {
         const input = '๕'
         const expectedOutput = true
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -68,7 +68,7 @@ describe('isThaiChar', () => {
         const input = ''
         const expectedOutput = false
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -77,7 +77,7 @@ describe('isThaiChar', () => {
         const input = ' '
         const expectedOutput = false
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
@@ -86,7 +86,7 @@ describe('isThaiChar', () => {
         const input = 'สวัสดี'
         const expectedOutput = true
         
-        const result = isThaiChar(input)
+        const result = isThaiCharacter(input)
         
         expect(result).toBe(expectedOutput)
     });
