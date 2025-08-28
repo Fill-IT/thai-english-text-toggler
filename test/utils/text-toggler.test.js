@@ -27,4 +27,13 @@ describe('toggleStringInput', () => {
         
         expect(result).toBe(expectedOutput);
     });
+
+    test(`givenStringWithThaiAndEnglishWithDuplicateEnglishRecordCharacter_WhenCallingToggleStringInput_ThenReturnThaiAndEnglishOutput`, () => {
+        const input = "]n,gx]ujpo4kKk น้ ืน"
+        const expectedOutput = "ลืมเปลี่ยนภาษา oh no"
+
+        const result = toggleStringInput(input);
+        
+        expect(result).toBe(expectedOutput);
+    })
 });
