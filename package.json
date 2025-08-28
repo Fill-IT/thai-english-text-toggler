@@ -1,0 +1,26 @@
+{
+  "name": "thai-english-text-toggler",
+  "version": "1.0.0",
+  "description": "Library สำหรับสลับตัวอักษรภาษาไทยและอังกฤษสำหรับแก้ไขปัญหาลืมเปลี่ยนภาษาตอนพิมพ์",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/Fill-IT/thai-english-text-toggler"
+  },
+  "keywords": [
+    "thai",
+    "english",
+    "ลืมเปลี่ยนภาษา",
+    "forget",
+    "to",
+    "change",
+    "language",
+    "text",
+    "toggler"
+  ],
+  "author": "RealFilllykung",
+  "license": "MIT"
+}
