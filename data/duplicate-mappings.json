@@ -1,0 +1,11 @@
+{
+    ",": { "thai": "ม", "english": "}" },
+    "/": { "thai": "ฝ", "english": "2" },
+    "?": { "thai": "ฦ", "english": "M" },
+    "(": { "thai": "๖", "english": "Z" },
+    ")": { "thai": "๗", "english": "X" },
+    "-": { "thai": "ข", "english": "3" },
+    "+": { "thai": "๙", "english": "!" },
+    "_": { "thai": "๘", "english": "`" },
+    "%": { "thai": "๔", "english": "~" }
+}
