@@ -13,28 +13,25 @@ npm install thai-english-text-toggler
 ### Basic Usage
 
 ```javascript
-const { toggleStringInput, isThaiCharacter } = require('thai-english-text-toggler');
+const { toggleThaiEnglishStringInput } = require('thai-english-text-toggler');
 
 // Example 1: English to Thai
 const englishText = 'l;ylfu';
-console.log(toggleStringInput(englishText)); // สวัสดี
+console.log(toggleThaiEnglishStringInput(englishText)); // สวัสดี
 
 // Example 2: Thai to English  
 const thaiText = 'าพีิ';
-console.log(toggleStringInput(thaiText)); // krub
+console.log(toggleThaiEnglishStringInput(thaiText)); // krub
 
 // Example 3: Mixed text with context-aware conversion
 const mixedText = ']n,gx]ujpo4kKk น้ ืน';
-console.log(toggleStringInput(mixedText)); // ลืมเปลี่ยนภาษา oh no
+console.log(toggleThaiEnglishStringInput(mixedText)); // ลืมเปลี่ยนภาษา oh no
 
-// Example 4: Check if character is Thai
-console.log(isThaiCharacter('น')); // true
-console.log(isThaiCharacter('a')); // false
 ```
 
 ## API Reference
 
-### toggleStringInput(input)
+### toggleThaiEnglishStringInput(input)
 
 Converts text between Thai and English keyboard layouts with smart context detection.
 
@@ -46,26 +43,8 @@ Converts text between Thai and English keyboard layouts with smart context detec
 
 **Example:**
 ```javascript
-toggleStringInput('l;ylfu'); // Returns: สวัสดี
-toggleStringInput('สวัสดี'); // Returns: l;ylfu
-```
-
-### isThaiCharacter(char)
-
-Checks if a character belongs to the Thai Unicode range (U+0E00-U+0E7F).
-
-**Parameters:**
-- `char` (string): The character to check
-
-**Returns:**
-- (boolean): True if the character is Thai, false otherwise
-
-**Example:**
-```javascript
-isThaiCharacter('ก'); // Returns: true
-isThaiCharacter('a'); // Returns: false
-isThaiCharacter('๕'); // Returns: true (Thai number)
-isThaiCharacter('่'); // Returns: true (Thai tone marker)
+toggleThaiEnglishStringInput('l;ylfu'); // Returns: สวัสดี
+toggleThaiEnglishStringInput('สวัสดี'); // Returns: l;ylfu
 ```
 
 ## Supported Characters

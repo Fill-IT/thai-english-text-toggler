@@ -1,7 +1,5 @@
-const { toggleStringInput } = require('./utils/text-toggler');
-const { isThaiCharacter } = require('./utils/thai-character-checker');
+const { toggleThaiEnglishStringInput } = require('./utils/text-toggler');
 
 module.exports = { 
-    toggleStringInput,
-    isThaiCharacter
+    toggleThaiEnglishStringInput
 };

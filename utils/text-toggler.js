@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { isThaiCharacter } = require('./thai-character-checker');
 
-function toggleStringInput(input) {
+function toggleThaiEnglishStringInput(input) {
     const arrayInput = input.split('');
     
     const dictionaryPath = path.join(__dirname, '..', 'data', 'thai-english-keyboard-text-dictionary.json');
@@ -37,4 +37,4 @@ function toggleStringInput(input) {
     return output;
 }
 
-module.exports = { toggleStringInput };
+module.exports = { toggleThaiEnglishStringInput };

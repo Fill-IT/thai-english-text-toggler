@@ -1,11 +1,11 @@
-const { toggleStringInput } = require('../../utils/text-toggler');
+const { toggleThaiEnglishStringInput } = require('../../utils/text-toggler');
 
 describe('toggleStringInput', () => {
     test('givenEnglishOnlyString_WhenCallingToggleStringInput_ThenReturnThaiOutput', () => {
         const input = 'l;ylfu'
         const expectedOutput = "สวัสดี"
         
-        const result = toggleStringInput(input);
+        const result = toggleThaiEnglishStringInput(input);
         
         expect(result).toBe(expectedOutput);
     });
@@ -14,7 +14,7 @@ describe('toggleStringInput', () => {
         const input = "าพีิ"
         const expectedOutput = 'krub'
         
-        const result = toggleStringInput(input);
+        const result = toggleThaiEnglishStringInput(input);
         
         expect(result).toBe(expectedOutput);
     });
@@ -23,7 +23,7 @@ describe('toggleStringInput', () => {
         const input = "l;ylfu าพีิ"
         const expectedOutput = "สวัสดี krub"
         
-        const result = toggleStringInput(input);
+        const result = toggleThaiEnglishStringInput(input);
         
         expect(result).toBe(expectedOutput);
     });
@@ -32,7 +32,7 @@ describe('toggleStringInput', () => {
         const input = "]n,gx]ujpo4kKk น้ ืน"
         const expectedOutput = "ลืมเปลี่ยนภาษา oh no"
 
-        const result = toggleStringInput(input);
+        const result = toggleThaiEnglishStringInput(input);
         
         expect(result).toBe(expectedOutput);
     })
