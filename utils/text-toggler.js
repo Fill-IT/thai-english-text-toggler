@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { isThaiCharacter } = require('./thai-character-checker');
+const { isThaiCharacter } = require('is-thai-input');
 
 function toggleThaiEnglishStringInput(input) {
     const arrayInput = input.split('');

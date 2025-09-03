@@ -72,14 +72,12 @@ thai-english-text-toggler/
 ├── index.js                           # Main entry point
 ├── utils/
 │   ├── text-toggler.js               # Core conversion logic
-│   └── thai-character-checker.js     # Thai character detection
 ├── data/
 │   ├── thai-english-keyboard-text-dictionary.json  # Character mappings
 │   └── duplicate-mappings.json       # Context-aware duplicate mappings
 └── test/
     └── utils/
         ├── text-toggler.test.js      # Core functionality tests
-        └── thai-character-checker.test.js  # Character detection tests
 ```
 
 ## Use Cases
@@ -93,6 +91,16 @@ thai-english-text-toggler/
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feat/amazing-feature`)
+3. Commit your changes (`git commit -m 'feat: Add some amazing feature'`)
+4. Push to the branch (`git push origin feat/amazing-feature`)
+5. Open a Pull Request
+
+## Repository
+
+GitHub: [https://github.com/Fill-IT/thai-english-text-toggler](https://github.com/Fill-IT/thai-english-text-toggler)
 
 ## License
 
