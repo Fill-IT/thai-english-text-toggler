@@ -1,6 +1,6 @@
 {
   "name": "thai-english-text-toggler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Library สำหรับสลับตัวอักษรภาษาไทยและอังกฤษสำหรับแก้ไขปัญหาลืมเปลี่ยนภาษาตอนพิมพ์",
   "main": "index.js",
   "scripts": {
